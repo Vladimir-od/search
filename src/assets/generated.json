@@ -1,0 +1,47 @@
+[{
+  "id": "RZDU0123452",
+  "owner": "SMA",
+  "history": [
+    {
+      "dateFrom": "12-01-16",
+      "dateTo": "10-05-16",
+      "sourcePort": "Marseille (France)",
+      "destinationPort": "Odessa (Ukraine)",
+      "sender": "Skyfan LTD",
+      "recipient": ""
+    },
+    {
+      "dateFrom": "10-07-16",
+      "dateTo": "05-12-16",
+      "sourcePort": "Odessa (Ukraine)",
+      "destinationPort": "Freetown (Sierra Leone)",
+      "sender": "BarkDan LTD",
+      "recipient": "LeonAtlas"
+    },
+    {
+      "dateFrom": "15-01-17",
+      "dateTo": "05-02-17",
+      "sourcePort": "Freetown (Sierra Leone)",
+      "destinationPort": "Stockholm (Sweden)",
+      "sender": "BaSierra Export LTD",
+      "recipient": "BDFL Ltd."
+    },
+    {
+      "dateFrom": "25-02-17",
+      "dateTo": "29-06-17",
+      "sourcePort": "Stockholm (Sweden)",
+      "destinationPort": "Quy Nhon (Vietnam)",
+      "sender": "Fish Export LTD",
+      "recipient": "Nhol"
+    },
+    {
+      "dateFrom": "01-08-17",
+      "dateTo": "20-10-17",
+      "sourcePort": "Quy Nhon (Vietnam)",
+      "destinationPort": "Quy Nhon (Vietnam)",
+      "sender": "Nhol",
+      "recipient": "Import DFG Ltd."
+    }
+  ]
+}
+]
