@@ -1,0 +1,40 @@
+<div *ngIf="container">
+<div class="col-md-12 ">
+  <table class="table-responsive table-bordered">
+    <thead>
+    <tr>
+      <th scope="col">ID:</th>
+      <th scope="col">OWNER:</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>{{container.id}}</td>
+      <td>{{container.owner}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<table class="table table-bordered" >
+  <thead>
+  <tr>
+    <th>dateFrom</th>
+    <th>dateTo</th>
+    <th> sourcePort</th>
+    <th>destinationPort</th>
+    <th>sender</th>
+    <th>recipient</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let history of container.history">
+    <td>{{history.dateFrom}}</td>
+    <td>{{history.dateTo}}</td>
+    <td>{{history.sourcePort}}</td>
+    <td>{{history.destinationPort}}</td>
+    <td>{{history.sender}}</td>
+    <td>{{history.recipient}}</td>
+  </tr>
+  </tbody>
+</table>
+</div>

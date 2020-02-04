@@ -1,6 +1,7 @@
 export class Container {
   id: string;
   owner: string;
+  history: History[];
 }
 export class History {
   dateFrom: number;

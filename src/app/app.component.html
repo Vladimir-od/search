@@ -1,29 +1,32 @@
 <div class="card" >
   <header class="card-header">
-    <h1>Для поиска истории контейнера введите его номер</h1>
+    <a [routerLink]="''" (click)="clear(form)">
+    <h3>Для поиска истории контейнера введите его номер</h3>
+    </a>
   </header>
-  <form #form="ngForm" (ngSubmit)="getContainer(container.value)">
-  <div class="card-body">
-  <div class="form-group">
-<label>Маркировочный номер контейнера</label>
-    <div>
-      <label>
-        <input ngModel name="container" #container="ngModel"  type="text"  class="card-text" pattern="[A-Z]{4}[\d]{7}">
-      </label>
-      <div *ngIf="container.touched && container.invalid">
-      <div *ngIf="container.errors.pattern"  >
-        <div class="alert alert-danger" >input error, example RZDE1234567</div>
-      </div>
-      </div>
-    </div>
-    </div>
+  <form  #form = "ngForm" >
     <div class="card-body">
-  <button  [disabled]="form.invalid || form.pristine" type="submit" >Поиск</button>
-  <button type="button" (click)="clear(form)">Очистить</button>
+      <div class="form-group">
+        <label>Маркировочный номер контейнера</label>
+        <div>
+          <label>
+            <input ngModel name="container" #container="ngModel"  type="text"   pattern="[A-Z]{4}[\d]{7}">
+          </label>
+          <div *ngIf="container.touched && container.invalid">
+            <div *ngIf="container.errors.pattern"  >
+              <div class="alert alert-danger">input error, example RZDE1234567</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+
+        <button class="btn btn-outline-primary" [disabled]="form.invalid || form.pristine" type="submit"
+                 (click)="checkNumber(container.value)">Поиск</button>
+        <button class="btn btn-outline-primary" type="button" (click)="clear(form)">Очистить</button>
+
+      </div>
     </div>
-  </div>
-</form>
+  </form>
 </div>
-<app-container-detailes></app-container-detailes>
-
-
+<router-outlet></router-outlet>
