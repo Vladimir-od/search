@@ -12,7 +12,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Инструкция про развертыванию на локальной машине:
-Создаеть проект Angular CLI
-скачать проект и скопировать его в папку с только что созданным проектом
-запустить npm start или ng serve
-"# chance2" 
+Создаеть проект Angular CLI. 
+Скачать проект и скопировать его в папку с только что созданным проектом.  
+Запустить npm start или ng serve.
+
